@@ -9,7 +9,7 @@
         <!-- Validation Errors -->
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
 
-        <form method="POST" action="{{ route('register') }}">
+        <form method="POST" action="{{ route('dashboard') }}">
             @csrf
 
             <!-- Name -->
@@ -45,10 +45,18 @@
                                 name="password_confirmation" required />
             </div>
 
+            <div class="form-group-mt-2 mb-2">
+                <div class="captcha">
+                    <span>{!! captcha_img() !!}</span>
+
+                </div>
+            </div>
+            <div class="form-group-mt-2 mb-2">
+                <input id="captcha" type="text" class="block mt-1 w-full" placeholder="Enter Captcha" name="captcha">
+
+            </div>
+
             <div class="flex items-center justify-end mt-4">
-                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-                    {{ __('Already registered?') }}
-                </a>
 
                 <x-button class="ml-4">
                     {{ __('Register') }}
@@ -57,3 +65,5 @@
         </form>
     </x-auth-card>
 </x-guest-layout>
+
+
