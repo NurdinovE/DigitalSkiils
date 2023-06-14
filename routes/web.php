@@ -1,7 +1,8 @@
 <?php
 
+use App\Http\Controllers\ImageController;
 use Illuminate\Support\Facades\Route;
-
+use \App\Http\Controllers\MainController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,12 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [MainController::class, 'home']);
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::get('/profile', [MainController::class, 'profile'])->name('profile')->middleware(['auth']);
+
+Route::post('/profile/edit', [MainController::class, 'editUserInfo'])->name('editUserInfo');
+
+Route::post('profile/upload', [ImageController::class, 'upload'])->name('upload');
+
+
 
 require __DIR__.'/auth.php';
