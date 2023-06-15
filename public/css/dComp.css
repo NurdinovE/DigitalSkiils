@@ -1,0 +1,32 @@
+h1{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    color: #8F2247;
+    text-align: center;
+
+}
+.rightSide{
+    width: 50%;
+
+}
+.leftSide{
+    width: 50%;
+}
+.middleSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.block{
+    margin-top: 20px;
+}
+.middleSide .block{
+    width: 347px;
+}
+.middleSide img{
+    width: 615px;
+    max-width: none;
+    margin-top: 99px;
+}

@@ -12438,6 +12438,9 @@ select{
   outline: 1px solid ButtonText;
   outline: 1px auto -webkit-focus-ring-color;
 }
+h2 {
+        font-family: Unbounded, system-ui, sans-serif;
+    }
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -12758,6 +12761,9 @@ select{
 .overflow-hidden{
   overflow: hidden;
 }
+.rounded{
+  border-radius: 0.25rem;
+}
 .rounded-lg{
   border-radius: 0.5rem;
 }
@@ -12974,6 +12980,10 @@ select{
 .text-green-600{
   --tw-text-opacity: 1;
   color: rgb(22 163 74 / var(--tw-text-opacity));
+}
+.text-indigo-600{
+  --tw-text-opacity: 1;
+  color: rgb(79 70 229 / var(--tw-text-opacity));
 }
 .text-indigo-700{
   --tw-text-opacity: 1;
@@ -13223,6 +13233,11 @@ select{
   }
   .sm\:pt-0{
     padding-top: 0px;
+  }
+}
+@media (min-width: 768px){
+  .md\:font-serif{
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   }
 }
 @media (min-width: 1024px){

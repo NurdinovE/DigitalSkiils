@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&family=Ubuntu&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/app.css">
     <script src="../js/app.js"></script>
@@ -16,6 +19,8 @@
 <body>
 
 @include('layouts/navigation')
+@include('drone/droneComponents')
+@include('drone/droneTechnology')
 
 <script type="text/javascript">
     $('#reload').click(function () {

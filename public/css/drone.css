@@ -1,0 +1,39 @@
+.img{
+    width: 40px;
+    margin-top: 0px;
+    width: 544px;
+}
+.techno{
+    display: flex;
+    margin-top: 50px;
+}
+.squere1, .squere2{
+    display: flex;
+}
+h3{
+    font-weight: 600;
+    color: #000000;
+    font-size: 16px;
+}
+span{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.gps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #444444;
+    border-radius: 8px;
+    padding: 10px;
+    width: 350px;
+    height: 197px;
+}
+.emae{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
